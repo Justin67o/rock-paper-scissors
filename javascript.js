@@ -8,7 +8,8 @@ let computerScore = 0;
     //Generate computer choice
 function getComputerChoice(){
     let result = Math.floor(Math.random() * 3) + 1;
-
+        //generate random number from 1-3
+        // 1 = rock, 2 = paper, 3 = scissors
     if (result === 1){
         return "Rock";
     } else if (result === 2){
@@ -18,10 +19,13 @@ function getComputerChoice(){
     }
 }
 
+function getHumanChoice(){
+    let result = prompt("Rock, Paper, or Scissors?");
+    return result;
+}
+console.log(getHumanChoice());
 
-
-        //generate random number from 1-3
-        // 1 = rock, 2 = paper, 3 = scissors
+        
     //IF player wins
         //increase player score
     //else 
